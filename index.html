@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Harrison Thorne</title>
+        <link rel="shortcut icon" href="./logo.png">
+        <link rel="icon" href="./logo.png">
+        <style type="text/css" media="screen">
+html {
+    background: linear-gradient(to bottom, #007777, #770077);
+    color: white;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.thin-content {
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 256px;
+    margin: 128px 0;
+}
+
+.row.odd {
+    flex-direction: row;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.row .img-container {
+    min-width: 392px;
+    margin: 0 32px;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.row img {
+    height: auto;
+    width: 100%;
+}
+
+.row .row-text {
+    margin: 0 32px;
+}
+
+a {
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.me {
+    margin: 64px 0 -32px;
+}
+
+.me .img-container {
+    margin: 0 auto;
+    width: 256px;
+    height: auto;
+}
+
+.me img {
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    margin: 64px auto 128px;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin-bottom: 32px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1 style="margin-top: 128px">I'm Harrison Thorne. I love what I do.</h1>
+
+            <nav>
+                <a href="#project" target="_blank">Projects</a>
+                <a href="#contact" target="_blank">Contact me</a>
+            </nav>
+
+            <h1>My projects</h1>
+            <div class="row">
+                <div class="row img-container">
+                    <img src="./blockery.png" alt="Blockery screenshot">
+                </div>
+                <div class="row-text">
+                    <h2>blockery</h2>
+                    <p>
+                        My first web game, written in pure JavaScript (soon to be
+                        ported to WebAssembly in Rust). Blockery is an idle clicker
+                        game about collecting blocks and building factories that make
+                        more blocks.
+                    </p>
+                    <p>
+                        Originally named Blockery Web, Blockery is the third iteration
+                        of its kind. Its first two versions were writting in Java: the
+                        first with the Java2D Swing framework and the second with
+                        OpenGL to bring three dimensions to the blocks. Without a
+                        proper version control system for either, both were destroyed
+                        in a freak refactoring accident.
+                    </p>
+                    <p>
+                        I've since learned Git to hold on to all of my projects.
+                        Blockery will live on this time.
+                    </p>
+                    <a target="_blank" href="https://harrisonthorne.github.io/blockery">Visit Blockery</a>
+                </div>
+            </div>
+            <div class="row odd">
+                <div class="row img-container">
+                    <img src="./mvelopes.png" alt="mvelopes screenshot">
+                </div>
+                <div class="row-text">
+                    <h2>mvelopes</h2>
+                    <p>
+                        A more recent project, mvelopes is a plain-text
+                        accounting tool written in Rust. It's still young, but
+                        it's helping me budget my finances well with built-in
+                        envelope budgeting.
+                    </p>
+                    <p>
+                        mvelopes aims to be a little more practical, helpful,
+                        and opinionated than other existing plain-text
+                        accounting tools and is largely inspired by hledger. It
+                        will work from the terminal first, but will eventually
+                        have its own GUI to make it easier to use.
+                    </p>
+                    <p>
+                        Other than tracking my money, I put mvelopes together
+                        to also learn Rust. I've decided I really like it!
+                    </p>
+                    <p>
+                        To learn more, 
+                        <a target="_blank" href="https://github.com/harrisonthorne/mvelopes">visit mvelopes.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row img-container">
+                    <img src="./muse-status.png" alt="muse-status screenshot">
+                </div>
+                <div class="row-text">
+                    <h2>muse-status</h2>
+                    <p>
+                        Targeted towards Linux desktop users, muse-status
+                        provides system information in a beautiful format. It's
+                        not a status bar, but a status <i>command</i>; it only
+                        provides the output/text for a status bar like lemonbar,
+                        i3-bar, or swaybar. It runs with a server-client model.
+                        One daemon runs, and clients can connect to receive the
+                        output status text. Clients can also send commands to
+                        the status daemon to manually update information.
+                    </p>
+                    <p>
+                        muse-status is part of the "Muse Suite".  The Muse
+                        Suite is my own personal, open-source collection of
+                        Linux desktop utilities to make the Linux desktop more
+                        beautiful and practical. It's also supposed to be light
+                        on resources like most Linux desktop programs.
+                        Fittingly, the suite is named after the "muses" of
+                        Greek mythology, which were the beautiful goddesses of
+                        the arts and sciences.
+                    </p>
+                    <p>
+                        I wrote muse-status in the Go programming language to
+                        learn Go. muse-status is in the process of being
+                        rewritten in Rust for even better background
+                        performance. Additionally, I've learned a lot about the
+                        Linux operating system and kernel while writing
+                        muse-status.
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://github.com/harrisonthorne/muse-status">Visit muse-status</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="thin-content">
+            <h1 style="margin: 128px 0 64px">Always learning more</h1>
+            <p>
+                I've always learned something new with each project I've
+                created. I'm always eager to try something new with each new
+                project.
+            </p>
+            <p>
+                When it comes to learning something new, I'll dive head-first
+                into the material and tools I need to reach the goal. I'll work
+                with others, collaborate with others, and work as best as I can
+                to carry my team wherever we're going.
+            </p>
+            <p>
+                I believe in reaching out for help, having an open mind, and
+                always moving forward. If mistakes happen, I learn from them.
+                There's nothing that can't be fixed.
+            </p>
+        </div>
+        <div class="me">
+            <div class="img-container">
+                <img class="me" src="./me.jpg" alt="My picture">
+            </div>
+        </div>
+        <div id="contact" class="thin-content">
+            <h1 style="margin: 128px 0 64px">Talk to me</h1>
+            <p>
+                If you want to help me with a project, hire me, or just talk,
+                feel free to email me or send me a text:
+            </p>
+            <div style="margin: 64px 0">
+                <p style="text-align: center">
+                    <a target="_blank" href="mailto:harrison.thorne@gmail.com?subject=feedback">harrison.thorne@gmail.com</a>
+                </p>
+                <p style="text-align: center">
+                    <a target="_blank" href="tel:+12084889542">+1 (208) 488 9542</a>
+                </p>
+            </div>
+            <p>
+                You can also look at my GitHub profile. I like open-source:
+            </p>
+            <div style="margin: 64px 0">
+                <p style="text-align: center">
+                    <a target="_blank" href="https://github.com/harrisonthorne">My GitHub profile</a>
+                </p>
+            </div>
+        </div>
+        <!-- <img class="logo" src="./logo.svg" alt="Musicaflight logo"> -->
+        <div class="end" style="height: 32px"></div>
+    </body>
+</html>
